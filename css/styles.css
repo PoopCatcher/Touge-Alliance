@@ -1,1 +1,16 @@
 
+.logo {
+    font-family: "Zen Loop", cursive;
+    font-size: 100px;
+  }
+  
+  form {
+    color: hsl(180, 34%, 36%);
+  }
+  
+  .privet {
+    color: brown;
+    width: 500px;
+    border: 2px dotted black;
+  }
+  
