@@ -1,6 +1,7 @@
 html {
     height: 100%;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,4 +26,20 @@ header::before {
     content: '';
     display: block;
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform-origin: center;
+    min-height:30vh;
+    background-color: #171717
+}
+header div {
+    margin: top -100px;
+    color: #ededed
+}
+main {
+    color: #ededed;
+    background-color: #444444;
 }
