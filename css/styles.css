@@ -1,45 +1,72 @@
+/*
+Palette
+#EEEBDD
+#CE1212
+#810000
+#1B1717
+*/
+
 html {
-    height: 100%;
-    overflow: hidden;
-    scroll-behavior: smooth;
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: Consolas;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Consolas;
 }
 
 header {
-    box-sizing: border-box;
-    min-height: 50vh;
-    text-align: center;
-    padding-top: 2%;
-    transform-style: inherit;
-    width:100vw
+  box-sizing: border-box;
+  min-height: 50vh;
+  text-align: center;
+  padding-top: 2%;
+  transform-style: inherit;
+  width: 100vw;
 }
 header::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    transform-origin: center;
-    min-height:30vh;
-    background-color: #171717
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform-origin: center;
+  min-height: 30vh;
+  background-color: #eeebdd;
 }
 header div {
-    margin: top -100px;
-    color: #ededed
+  margin: top -100px;
+  color: #1b1717;
 }
 main {
-    color: #ededed;
-    background-color: #444444;
+  color: #eeebdd;
+  background-color: #1b1717;
+}
+
+.fuji {
+  align-items: center;
+  width: 100%;
+}
+
+.sun {
+  background-color: #ce1212;
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
