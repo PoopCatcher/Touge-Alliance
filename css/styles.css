@@ -120,7 +120,6 @@ footer {
   box-shadow: 0 0 20px #000;
   height: 100px;
   width: 100%;
-  z-index: 2;
 }
 .container {
   height: 100vh;
@@ -130,8 +129,9 @@ footer {
   padding-top: 80px;
 }
 .sun-s {
-  height: 400px;
-  width: 400px;
+  position: relative;
+  height: 500px;
+  width: 500px;
   background-color: #ce1212;
   border-radius: 50%;
   z-index: 0;
@@ -139,13 +139,13 @@ footer {
 
 .container-main-sub {
   margin: -700px 0 0 0;
-  z-index: 1;
 }
 .main2 {
   background-image: url(../img/fuji.svg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  position: relative;
   width: 100vw;
   height: 450px;
   z-index: 1;
@@ -153,7 +153,6 @@ footer {
 .main21 {
   background-color: #1b1717;
   height: 1000px;
-  z-index: 1;
 }
 .credits {
   height: inherit;
