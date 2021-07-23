@@ -111,6 +111,9 @@ header img {
   display: inline;
   font-family: "Mate SC", serif;
 }
+.main-header.version {
+  font-size: 12px;
+}
 footer {
   margin-top: auto;
   background-color: #1b1717;
@@ -153,5 +156,9 @@ footer {
   z-index: 1;
 }
 .credits {
-  padding: 50px 40px 50px 40px;
+  height: inherit;
+  padding: 0 0 0 40px;
+  display: flex;
+  align-items: center;
+  color: #eeebdd;
 }
