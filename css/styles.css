@@ -116,10 +116,12 @@ header img {
 }
 footer {
   margin-top: auto;
+  position: relative;
   background-color: #1b1717;
   box-shadow: 0 0 20px #000;
   height: 100px;
   width: 100%;
+  z-index: 2;
 }
 .container {
   height: 100vh;
@@ -139,20 +141,23 @@ footer {
 
 .container-main-sub {
   margin: -700px 0 0 0;
+  position: relative;
+  z-index: 1;
 }
 .main2 {
   background-image: url(../img/fuji.svg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  position: relative;
   width: 100vw;
   height: 450px;
-  z-index: 1;
 }
 .main21 {
   background-color: #1b1717;
-  height: 1000px;
+  height: auto;
+  color: #eeebdd;
+  padding: 0px 650px;
+  font-size: 20px;
 }
 .credits {
   height: inherit;
@@ -160,4 +165,73 @@ footer {
   display: flex;
   align-items: center;
   color: #eeebdd;
+}
+.cite-ta {
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px #000;
+  background-color: #161515;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 18px;
+  color: #999999;
+  line-height: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.cite-kaw {
+  background-image: url(../img/quotes.png);
+  background-repeat: no-repeat;
+  background-size: 75px;
+  height: inherit;
+  width: 700px;
+  margin: -10px 10px 0 0;
+}
+.cite-kaw.bottom {
+  margin: 240px 0 0 0;
+}
+.main21.maps {
+  background-color: #1b1717;
+  background-image: url(../img/japanr.png);
+  background-size: 1380px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  height: 1500px;
+  width: 100%;
+  color: #eeebdd;
+  padding: 150px 80px;
+  font-size: 20px;
+}
+.mapcard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  border-top: 1px solid #eeebdd1f;
+  border-left: 1px solid #eeebdd1f;
+  box-shadow: 0 1px 10px #000;
+  background-color: rgba(255, 255, 255, 0.02);
+  width: 550px;
+  height: 230px;
+}
+.mapcard img {
+  border-radius: 10px;
+  border: 1px solid #000;
+  border-top: 1px solid #eeebdd1f;
+  border-left: 1px solid #eeebdd1f;
+  overflow: hidden;
+  box-shadow: 0 0 7px #000;
+  height: 180px;
+  width: 180px;
+  margin: 0 0 0 25px;
+}
+
+mctext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
 }
