@@ -83,7 +83,7 @@ html {
 }
 main {
   background-color: #eeebdd;
-  height: 100%;
+  height: auto;
   padding: 0;
   margin: 0;
   position: 0 0 0;
@@ -132,4 +132,9 @@ footer {
 }
 
 .main2 {
+  background-image: url(../img/fuji.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
 }
