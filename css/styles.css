@@ -79,21 +79,23 @@ h6 {
 }
 /*-------------------------*/
 html {
-  overflow: auto;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 main {
   background-color: #eeebdd;
   height: auto;
+  min-height: 100%;
   padding: 0;
   margin: 0;
-  position: 0 0 0;
+  position: static;
 }
 
 header {
   background-color: #1b1717;
   font-size: 30px;
   color: #eeebdd;
-  box-shadow: 0 0 20px #1b1717;
+  box-shadow: 0 0 20px #000;
   padding: 20px;
   vertical-align: middle;
   position: fixed;
@@ -112,7 +114,7 @@ header img {
 footer {
   margin-top: auto;
   background-color: #1b1717;
-  box-shadow: 0 0 20px #1b1717;
+  box-shadow: 0 0 20px #000;
   height: 100px;
   width: 100%;
   z-index: 2;
@@ -129,12 +131,27 @@ footer {
   width: 400px;
   background-color: #ce1212;
   border-radius: 50%;
+  z-index: 0;
 }
 
+.container-main-sub {
+  margin: -700px 0 0 0;
+  z-index: 1;
+}
 .main2 {
   background-image: url(../img/fuji.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
+  width: 100vw;
+  height: 450px;
   z-index: 1;
+}
+.main21 {
+  background-color: #1b1717;
+  height: 1000px;
+  z-index: 1;
+}
+.credits {
+  padding: 50px 40px 50px 40px;
 }
