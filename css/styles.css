@@ -202,7 +202,7 @@ footer {
   height: 1500px;
   width: 100%;
   color: #eeebdd;
-  padding: 150px 80px;
+  padding: 150px 50px;
   font-size: 20px;
 }
 .mapcard {
@@ -214,8 +214,10 @@ footer {
   border-left: 1px solid #eeebdd1f;
   box-shadow: 0 1px 10px #000;
   background-color: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
   width: 550px;
-  height: 230px;
+  height: 210px;
+  margin: 20px;
 }
 .mapcard img {
   border-radius: 10px;
@@ -226,12 +228,45 @@ footer {
   box-shadow: 0 0 7px #000;
   height: 180px;
   width: 180px;
-  margin: 0 0 0 25px;
+  margin: 0 0 0 20px;
 }
 
-mctext {
+.mctext {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 40px;
+  align-items: top;
+  padding: 30px;
+  height: inherit;
+}
+.ctitle {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  font-family: "Mate SC", serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.mctext ul li {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  padding: 6px 6px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+}
+.jp-txt {
+  font-family: "Noto Serif JP", serif;
+}
+.tempe {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  font-family: "Mate SC", serif;
+  font-size: 15px;
+  padding: 3px 0;
+}
+.inmaps {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
 }
